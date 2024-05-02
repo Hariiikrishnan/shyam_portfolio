@@ -562,7 +562,14 @@ nav .item ul li{
         width: auto;
     }
     #home .circle-cont h2 span,#home .circle-cont h2  {
-        font-size: 18px;
+        /* font-size: 18px; */
+    }
+    #home .circle-cont .words-wrapper {
+        height: 80px;
+        flex-direction: column;
+    }
+    #home .circle-cont .words-wrapper .words{
+        padding-left: 0;
     }
     #home .circle-cont .fabs button{
         margin: 10px 0;
