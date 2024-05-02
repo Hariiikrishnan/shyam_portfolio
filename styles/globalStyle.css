@@ -536,25 +536,152 @@ nav .item ul li{
 
 
 
+ .sideBar{
+    display:none;
+  }
+ .sideBarMenu{
+    display:none;
+  }
+
+  
+
+
+@keyframes fullSlideIn {
+    0%{
+      transform: translateX(100%);
+    }
+    100%{
+      transform: translateX(0);
+    }
+    
+  }
+  @keyframes fullSlideOut {
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+    
+  }
 
 /* Mobile Size Media Query */
 
 @media only screen and (max-width: 768px) {
 
-    nav{
-        display: none!important;
+
+    nav {
+        display: none !important;;
+      }
+
+    .sideBar{
+        
+        background: black;
+        position: fixed;
+        /* padding: 10px; */
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 99999;
+      }
+      .sideBar img{
+        height: 40px;
+      }
+      .sideBar button{
+       
+        margin: 30px 0;
+        background: black;
+        color: #F59E34;
+        border: none;
+        font-size: 2rem;
+      }
+    
+    .sideBarMenu{
+        transform: translateX(100%);
+        height: 100vh;
+        width: 100vw;
+        background-color: #ebb26c26;
+        position: fixed;
+        z-index: 21623;
+        top: 0%;
+        left: 0%;
+        /* width: 100%; */
+        /* transition: transform 0.5s ease; */
+        backdrop-filter: blur(5px);
+        /* transition: transform 0.5s ease; */
+      }
+       .sideBarMenu.show{
+        transform: translateX(0);
+        display: block;
+        animation: fullSlideIn 0.5s ease;
+      }
+       .sideBarMenu.close{
+        animation: fullSlideOut 0.5s ease;
+      }
+
+      .sideBarMenu .navbarLinks ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .sideBarMenu .navbarLinks li{
+        list-style-type: none;
+        font-size: 2rem;
+        text-align: center;
+        background-color: white;
+        padding: 10px 5px;
+        margin: 10px 0;
+        border-radius: 8px;
+        width: 100%;
+      }
+      .sideBarMenu .navbarLinks button{
+        background: #F59E34;
+        
+    border: none;
+    padding: 20px;
+    font-size: 2.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      }
+      .sideBarMenu.show .navbarLinks{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: inherit;
+      }
+      
+    
+      /* input[type=checkbox]:checked ~ .menu {
+        display: block;
+    } */
+    
+    .hamburger-menu {
+        display: block;
+        margin-bottom: 3px;
     }
+
+
+    
     #home{
         flex-direction: column;
     }
     #home .circle-cont {
         /* width: 70%; */
         /* height: 70%; */
+        margin-top: 100px;
     }
     #home .blob{
         height: 400px;
         width: 400px;
         left: 10%;
+        bottom: 40%;
     }
     #home .circle-cont .fabs {
         /* width: 75px; */
