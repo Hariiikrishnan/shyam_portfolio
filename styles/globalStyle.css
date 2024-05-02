@@ -601,11 +601,12 @@ nav .item ul li{
         transform: translateX(100%);
         height: 100vh;
         width: 100vw;
-        background-color: #21a4b547;
+        background-color: #21a4b540;
         position: fixed;
         z-index: 21623;
         top: 0%;
         left: 0%;
+        height: 100%;
         /* width: 100%; */
         /* transition: transform 0.5s ease; */
         backdrop-filter: blur(5px);
