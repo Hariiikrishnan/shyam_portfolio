@@ -3,7 +3,9 @@
     padding: 0;
     font-family: 'Josefin Sans';
 }
-
+body{
+    /* overflow: hidden; */
+}
 
 
 .d-flex{
@@ -56,8 +58,8 @@ nav .item ul li{
 }
 
 #home .circle-cont{
-    height: 700px;
-    width: 700px;
+    /* height: 700px; */
+    /* width: 700px; */
     align-items: baseline;
     flex-direction: column;
     /* margin: 0 0 0 40px; */
@@ -530,6 +532,95 @@ nav .item ul li{
 #footer .sign img{
     height: 80px;
 }
+
+
+
+
+
+/* Mobile Size Media Query */
+
+@media only screen and (max-width: 768px) {
+
+    nav{
+        display: none!important;
+    }
+    #home{
+        flex-direction: column;
+    }
+    #home .circle-cont {
+        /* width: 70%; */
+        /* height: 70%; */
+    }
+    #home .blob{
+        height: 400px;
+        width: 400px;
+        left: 10%;
+    }
+    #home .circle-cont .fabs {
+        /* width: 75px; */
+        flex-direction: column;
+        width: auto;
+    }
+    #home .circle-cont h2 span,#home .circle-cont h2  {
+        font-size: 18px;
+    }
+    #home .circle-cont .fabs button{
+        margin: 10px 0;
+    }
+
+
+    #home .astro-banner{
+        height: 35%;
+    }
+
+
+    #about .about-cont .upper {
+        flex-direction: column;
+    }
+    #about .about-cont .momo-hi h1 {
+        font-size: 15rem;
+    }
+    #about .about-cont .momo-hi .arrow {
+        display: none;
+    }
+    #about .about-cont .upper .content{
+        padding: 10px ;
+    }
+    #about .about-cont .lower {
+        padding: 10px 20px;
+    }
+
+    #about .stack img {
+        height: 250px;
+    }
+
+
+    #lab .work {
+        padding: 30px;
+    }
+    #lab .work .upper{
+        /* justify-content: center; */
+    }
+    #lab .work .upper .inner-up div, #lab .work .upper .inner-low div{
+        width: 70%;
+    }
+    #lab .work .lower div{
+        width: 80%;
+    }
+    #lab .work .upper .inner-up, #lab .work .upper .inner-low{
+    flex-direction: column;
+    align-items: center;
+    }
+
+
+    #footer h1{
+        font-size: 2rem;
+    }
+}
+
+
+
+
 
 
 @keyframes spin_words_old {
