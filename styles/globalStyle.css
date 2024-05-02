@@ -579,6 +579,10 @@ nav .item ul li{
     #home .astro-banner{
         height: 35%;
     }
+    #home .circle-cont h2 span{
+        /* animation: spin_words_for_mobile 6s infinite; */
+        animation: spin_words_for_mobile 6s infinite;
+    }
 
 
     #about .about-cont .upper {
@@ -704,6 +708,70 @@ nav .item ul li{
     }
 }
 
+@keyframes spin_words_for_mobile {
+    
+    /* Awesome */
+    0%{
+        transform: translateY(-30%);       
+    }
+
+    /* Collboartive */
+    20%{
+        transform: translateY(-150%);
+    }
+    25%{
+        /* transform: translateY(0%); */
+        transform: translateY(-150%);
+    }
+    
+    /* A team Sport */
+    45%{
+        transform: translateY(-280%);
+    }
+    50%{
+        transform: translateY(-280%);
+    }
+   
+    /* Supafast */
+    70%{
+        transform: translateY(-400%);
+    }
+    75%{
+        transform: translateY(-400%);
+    }
+
+    /* Awesome */
+    95%{
+        transform: translateY(-535%);
+    }
+    100%{
+        transform: translateY(-535%);
+    }
+}
+
+
+@-webkit-keyframes changeHeader{
+    0% {
+        content: "Awesome";
+        transform: translateY(0%);
+    }
+    25% {
+        content: "Collaborative";
+        transform: translateY(100%);
+    }
+    50% {
+        content: "A Team Sport";
+    }
+    75% {
+        content: "Supafast";
+    }
+    100%{
+        content: "Awesome";
+    }   
+
+}
+
+
 @keyframes moveUp{
 
 
@@ -775,25 +843,4 @@ nav .item ul li{
         opacity: 0;
         transform:translateY(50%); 
     }
-}
-
-@-webkit-keyframes changeHeader{
-    0% {
-        content: "Awesome";
-        transform: translateY(0%);
-    }
-    25% {
-        content: "Collaborative";
-        transform: translateY(100%);
-    }
-    50% {
-        content: "A Team Sport";
-    }
-    75% {
-        content: "Supafast";
-    }
-    100%{
-        content: "Awesome";
-    }   
-
 }
