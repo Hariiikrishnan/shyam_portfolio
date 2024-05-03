@@ -54,7 +54,8 @@ nav .item ul li{
 }
 
 #home .astro-banner{
-    height: 50%;
+    /* height: 50%; */
+    height: 400px;
 }
 
 #home .circle-cont{
@@ -590,7 +591,7 @@ nav .item ul li{
       }
       .sideBar button{
        
-        margin: 30px 0;
+        margin: 20px 0;
         background: black;
         color: #F59E34;
         border: none;
@@ -705,11 +706,15 @@ nav .item ul li{
 
 
     #home .astro-banner{
-        height: 35%;
+        /* height: 35%; */
+        height: 250px;
     }
     #home .circle-cont h2 span{
         /* animation: spin_words_for_mobile 6s infinite; */
         animation: spin_words_for_mobile 6s infinite;
+    }
+    #home .circle-cont h2, #home .circle-cont p{
+        margin: 5px 25px;
     }
 
 
