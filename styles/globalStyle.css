@@ -54,8 +54,8 @@ nav .item ul li{
 }
 
 #home .astro-banner{
-    /* height: 50%; */
-    height: 400px;
+    height: 50%;
+    /* height: 400px; */
 }
 
 #home .circle-cont{
