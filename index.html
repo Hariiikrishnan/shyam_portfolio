@@ -19,17 +19,23 @@
     <nav class="d-flex">
         <div class="item">
             <ul>
-                <li>Home</li>
-                <li>About Me</li>
+                <a href="#">   Home </a> 
+                <a href="#about">   About Me </a> 
+                <!-- <li><a href="#about"></a></li> -->
             </ul>
         </div>
         <div class="item">
-            <h2 style="color: #F59E34;">Shyam</h2>
+            <!-- <h2 style="color: #F59E34;">Shyam</h2> -->
+            <div class="logo">
+                <img src="images/logo.svg"/>
+              </div>
         </div>
         <div class="item">
             <ul>
-                <li>Lab</li>
-                <li>Get in Touch</li>
+                <a href="#lab">   Lab </a> 
+                <a href="#footer">  Get in Touch </a> 
+                <!-- <li>Lab</li> -->
+                <!-- <li>Get in Touch</li> -->
             </ul>
         </div>
 
@@ -58,10 +64,18 @@
         <div class="navbarLinks">
             <ul>
                 
-                <li>Home</li>
+                <!-- <li></li> -->
+                <!-- <li></li> -->
+                <!-- <li></li> -->
+                <!-- <li></li> -->
+                <a href="#">   Home </a> 
+                <a href="#about">   About Me </a> 
+                <a href="#lab">   Lab </a> 
+                <a href="#footer">  Get in Touch </a> 
+                <!-- <li>Home</li>
                 <li>About Me</li>
                 <li>Lab</li>
-                <li>Get in Touch</li>
+                <li>Get in Touch</li> -->
                 <button onclick="closeSideBar()">
                     <!-- &#128473; -->
                      <!-- &#x1F5D9; -->
@@ -295,20 +309,20 @@
             <label>
                 Name
             </label>
-            <input placeholder="" name="name" />
+            <input placeholder="" name="name" class="name" value=""/>
             
 
             <label>
                 Email
             </label>
-            <input placeholder="" name="mail" />
+            <input placeholder="" name="mail" class="mail" value=""/>
 
             <label>
                 Message
             </label>
-            <input placeholder="" name="msg" />
+            <input placeholder="" name="msg" class="msg" value=""/>
             
-            <button>Submit</button>
+            <button onclick="sendMail()">Submit</button>
         </div>
 
         <div class="right">
@@ -332,10 +346,15 @@
                 Socials
             </p>
             <h6>
-                <img src="images/iconoir_figma.svg" />
+               <a href="www.figma.com/@shyamsumesh"> <img src="images/iconoir_figma.svg" /></a>
+               <a href="https://twitter.com/Shyam__sumesh">
                 <img src="images/prime_twitter.svg" />
-                <img src="images/bxl_behance.svg" />
-                <img src="images/ri_instagram-line.svg" />
+               </a>
+               <a href="https://www.behance.net/shyamsumesh1"> <img src="images/bxl_behance.svg" /></a>
+               <a href="https://www.instagram.com/_.theseus/"> <img src="images/ri_instagram-line.svg" /></a>
+               
+               
+               
             </h6>
 
         </div>

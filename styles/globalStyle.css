@@ -6,7 +6,13 @@
 body{
     /* overflow: hidden; */
 }
-
+html{
+    scroll-behavior: smooth;    
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
 
 .d-flex{
     display: flex;
@@ -29,7 +35,9 @@ nav{
     background-color: black;
     z-index: 999;
 }
-
+/* nav .item a{
+    z-index: 15497945316;
+} */
 nav .item{
     width: 40%;
     text-align: center;
@@ -38,10 +46,40 @@ nav .item{
 nav .item ul{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    height: 100%
 }
 nav .item ul li{
     list-style-type: none;
 }
+
+
+nav .item ul a,.sideBarMenu .navbarLinks a {
+    position: relative;
+    font-size: 20px;
+}
+nav .item ul a::before,.sideBarMenu .navbarLinks a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+nav .item ul a:hover::before,.sideBarMenu .navbarLinks a:hover::before{
+    width: 100%;
+}
+
+
+.logo img{
+    height: 30px;
+}
+
+
+
 
 
 
@@ -130,7 +168,7 @@ nav .item ul li{
 
 #home .blob{
     /* left: 10%; */
-    z-index: 1000;
+    z-index: 1;
     width: 700px;
     height: 700px;
     filter: blur(50px);
@@ -489,6 +527,7 @@ nav .item ul li{
     outline: none;
     background-color: #BCBABA;
     border-radius: 4px;
+    color: black;
 }
 #footer .left button{
     background: none;
@@ -509,9 +548,10 @@ nav .item ul li{
     padding: 15px;
     margin-bottom: 20px;
     transition: all 0.1s ease;
+    color: white;
 }
 #footer .right p,#footer .right h6{
-    font-size: 18px;
+    font-size: 16px;
 }
 #footer .right p{
     color: #7243A8;
@@ -580,7 +620,7 @@ nav .item ul li{
         background: black;
         position: fixed;
         /* padding: 10px; */
-        width: 100vw;
+        width: 97vw;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -628,7 +668,7 @@ nav .item ul li{
         justify-content: center;
         align-items: center;
       }
-      .sideBarMenu .navbarLinks li{
+      .sideBarMenu .navbarLinks a{
         list-style-type: none;
         font-size: 2rem;
         text-align: center;
@@ -637,6 +677,7 @@ nav .item ul li{
         margin: 10px 0;
         border-radius: 8px;
         width: 100%;
+        color: black;
       }
       .sideBarMenu .navbarLinks button{
         background: #F59E34;
@@ -680,9 +721,9 @@ nav .item ul li{
         margin-top: 100px;
     }
     #home .blob{
-        height: 400px;
-        width: 400px;
-        left: 10%;
+        height: 350px;
+        width: 350px;
+        /* left: 10%; */
         bottom: 40%;
     }
     #home .circle-cont .fabs {
@@ -739,6 +780,9 @@ nav .item ul li{
     }
 
 
+    #lab .projects{
+        padding: 30px;
+    }
     #lab .work {
         padding: 30px;
     }
@@ -755,8 +799,23 @@ nav .item ul li{
     flex-direction: column;
     align-items: center;
     }
+    #lab .projects .project {
+        flex-direction: column-reverse!important;
+        width: 80%;
+    }
+   
+    #lab .projects .project .banner{
+        width: 110%;
+        height: 170px;
+        margin-bottom: 10px;
+    }
+    #lab .projects .project .banner img{
+        height: 150px;
+    }
 
-
+    #footer{
+        padding: 30px;
+    }
     #footer h1{
         font-size: 2rem;
     }
