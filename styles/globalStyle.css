@@ -729,7 +729,8 @@ nav .item ul a:hover::before,.sideBarMenu .navbarLinks a:hover::before{
     #home .circle-cont .fabs {
         /* width: 75px; */
         flex-direction: column;
-        width: auto;
+        /* width: auto; */
+        align-items: center;
     }
     #home .circle-cont h2 span,#home .circle-cont h2  {
         /* font-size: 18px; */
@@ -749,6 +750,9 @@ nav .item ul a:hover::before,.sideBarMenu .navbarLinks a:hover::before{
     #home .astro-banner{
         /* height: 35%; */
         height: 250px;
+        position: absolute;
+        bottom: 15%;
+        opacity: 0.1;
     }
     #home .circle-cont h2 span{
         /* animation: spin_words_for_mobile 6s infinite; */
